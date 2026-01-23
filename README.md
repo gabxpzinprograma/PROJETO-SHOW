@@ -57,7 +57,6 @@ A empresa **NEWBYTE** possui quatro filiais:
 
 Cada filial possui sua rede local conectada a um roteador, que gerencia a comunicação WAN entre as unidades. A separação clara entre endereços privados (192.168.x.0/24) e públicos simulados (200.200.x.0/30) facilita o roteamento e reflete ambientes corporativos reais.
 
-*(Em breve adicionarei aqui a imagem da topologia completa simulada no Packet Tracer)*
 
 ## Tecnologias e Conceitos Utilizados
 
@@ -89,6 +88,4 @@ Foram executados testes abrangentes de conectividade com o comando **ping** (int
 ## Como Visualizar / Executar o Projeto
 
 1. Instale o **Cisco Packet Tracer** (disponível gratuitamente no site da Cisco Networking Academy).  
-2. Clone este repositório:  
-   ```bash
-   git clone https://github.com/SEU-USUARIO/newbyte-rede-corporativa.git
+2. Baixe a realase, e abra.
