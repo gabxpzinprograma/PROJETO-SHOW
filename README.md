@@ -1,113 +1,94 @@
-Projeto Prático de Redes de Computadores – NEWBYTE
+# Projeto Prático de Redes de Computadores – NEWBYTE
 
-Este repositório contém o desenvolvimento de um projeto prático da disciplina Redes de Computadores, realizado no Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA), como parte da avaliação da terceira unidade do curso Técnico em Informática Integrado.
+[![Cisco Packet Tracer](https://img.shields.io/badge/Simulado%20em-Cisco%20Packet%20Tracer-blue?logo=cisco)](https://www.netacad.com/pt-br/courses/packet-tracer)
+[![IFBA](https://img.shields.io/badge/IFBA%20-%20Campus%20Brumado-orange)](https://portal.ifba.edu.br/brumado)
 
-O projeto foi desenvolvido utilizando o software Cisco Packet Tracer, com foco na aplicação prática dos conceitos fundamentais de redes de computadores, respeitando o plano de endereçamento IP previamente definido pelo docente responsável.
+Este repositório contém o desenvolvimento completo do projeto prático da disciplina **Redes de Computadores** (3ª unidade), realizado no **Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA) – Campus Brumado**, no curso **Técnico em Informática Integrado**.
 
-Instituição
+O projeto foi inteiramente simulado no **Cisco Packet Tracer**, respeitando rigorosamente o plano de endereçamento IP definido pelo professor orientador.
 
-Instituto Federal de Educação, Ciência e Tecnologia da Bahia
-Campus Brumado
-Curso Técnico de Nível Médio em Informática
+## Instituição
 
-Desenvolvedores
+- **Instituto**: Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA)  
+- **Campus**: Brumado  
+- **Curso**: Técnico de Nível Médio em Informática  
 
-Állison Teixeira da Silva
+## Desenvolvedores
 
-Cláudio Kauê Ribeiro Oliveira
+- Állison Teixeira da Silva  
+- Cláudio Kauê Ribeiro Oliveira  
+- Gabriel Messias Gomes Bomfim  
 
-Gabriel Messias Gomes Bomfim
+## Orientação
 
-Orientação
+Professor **Marcos Santos**
 
-Professor Marcos Santos
+## Sobre o Projeto
 
-Sobre o Projeto
+O projeto simula a infraestrutura de rede de uma empresa fictícia chamada **NEWBYTE**, com filiais distribuídas em diferentes estados do Brasil. A proposta foi construir uma topologia corporativa realista, garantindo comunicação eficiente entre redes internas (LAN) e externas (WAN), além da implementação de serviços essenciais.
 
-O projeto simula a infraestrutura de rede de uma empresa fictícia denominada NEWBYTE, composta por filiais localizadas em diferentes estados do Brasil. A proposta consiste na construção de uma topologia de rede corporativa capaz de garantir comunicação eficiente entre redes internas e externas, além da implementação de serviços essenciais de rede.
+A topologia representa um cenário próximo ao de uma organização geograficamente distribuída, aplicando boas práticas de endereçamento, roteamento e segurança básica.
 
-A topologia foi planejada de forma a representar um cenário próximo ao ambiente real de uma organização distribuída geograficamente, utilizando boas práticas de endereçamento, roteamento e segurança.
+## Objetivo Geral
 
-Objetivo Geral
+Implementar uma topologia de rede corporativa funcional no Cisco Packet Tracer, utilizando majoritariamente a interface de linha de comando (**CLI**), conforme o plano de endereçamento fornecido.
 
-Implementar uma topologia de rede corporativa funcional no Cisco Packet Tracer, utilizando majoritariamente a interface de linha de comando (CLI), de acordo com o plano de endereçamento fornecido.
+## Objetivos Específicos
 
-Objetivos Específicos
+- Construir a topologia representando a empresa **NEWBYTE**  
+- Implementar redes locais (**LAN**) e enlaces WAN  
+- Configurar roteamento dinâmico com **RIP versão 2**  
+- Definir rota estática para acesso à rede externa (provedor de internet)  
+- Garantir comunicação total entre todas as redes internas e externas  
+- Configurar serviços de rede: **DHCP**, **DNS**, **HTTP** e **Telnet**  
+- Aplicar configurações básicas de segurança nos roteadores  
+- Realizar testes completos de conectividade e validação dos serviços  
 
-Construir uma topologia de rede representando a empresa fictícia NEWBYTE
+## Descrição da Topologia
 
-Implementar redes locais (LAN) e redes externas (WAN)
+A empresa **NEWBYTE** possui quatro filiais:
 
-Configurar roteamento dinâmico utilizando RIP versão 2
+| Filial          | Estado | Rede Interna (LAN)     | Rede Externa (WAN)    |
+|-----------------|--------|-------------------------|------------------------|
+| Bahia           | BA     | 192.168.x.0/24         | 200.200.x.0/30        |
+| Rio de Janeiro  | RJ     | 192.168.x.0/24         | 200.200.x.0/30        |
+| São Paulo       | SP     | 192.168.x.0/24         | 200.200.x.0/30        |
+| Pernambuco      | PE     | 192.168.x.0/24         | 200.200.x.0/30        |
 
-Implementar rota estática para acesso à rede externa (provedor de internet)
+Cada filial possui sua rede local conectada a um roteador, que gerencia a comunicação WAN entre as unidades. A separação clara entre endereços privados (192.168.x.0/24) e públicos simulados (200.200.x.0/30) facilita o roteamento e reflete ambientes corporativos reais.
 
-Garantir comunicação entre todas as redes internas e externas
+*(Em breve adicionarei aqui a imagem da topologia completa simulada no Packet Tracer)*
 
-Configurar serviços de rede como DHCP, DNS, HTTP e Telnet
+## Tecnologias e Conceitos Utilizados
 
-Aplicar configurações básicas de segurança nos roteadores
+- Cisco Packet Tracer  
+- Roteamento dinâmico (**RIP v2**)  
+- Roteamento estático  
+- **DHCP** (atribuição automática de endereços)  
+- **DNS** (resolução de nomes centralizada)  
+- **HTTP** (servidor web institucional)  
+- **Telnet** (acesso remoto)  
+- Endereçamento IP hierárquico  
+- Configuração via **CLI**  
+- Segurança básica (senhas, banners de aviso)  
 
-Realizar testes de conectividade e validação dos serviços configurados
+## Funcionalidades Implementadas
 
-Descrição da Topologia
+- Comunicação plena entre todas as filiais  
+- Acesso à rede externa (simulada)  
+- Distribuição automática de IPs via DHCP  
+- Resolução de nomes com servidor DNS central  
+- Acesso à página web institucional da empresa  
+- Gerenciamento remoto dos roteadores via Telnet  
+- Proteção mínima dos dispositivos (senhas criptografadas e banners)  
 
-A topologia da empresa NEWBYTE é composta por quatro filiais:
+## Testes Realizados
 
-Bahia (BA)
+Foram executados testes abrangentes de conectividade com o comando **ping** (intra-rede e inter-rede), além da validação completa dos serviços DHCP, DNS, HTTP e Telnet. Todos os resultados foram satisfatórios, comprovando o funcionamento correto da topologia.
 
-Rio de Janeiro (RJ)
+## Como Visualizar / Executar o Projeto
 
-São Paulo (SP)
-
-Pernambuco (PE)
-
-Cada filial possui sua própria rede local (LAN), conectada a um roteador responsável pela comunicação entre as unidades por meio de enlaces WAN. As redes internas utilizam endereços IP privados da faixa 192.168.x.0/24, enquanto as redes externas utilizam endereços da faixa 200.200.x.0/30.
-
-Essa separação entre redes internas e externas permite melhor organização lógica, facilita o roteamento e simula um ambiente corporativo realista.
-
-Tecnologias e Conceitos Utilizados
-
-Cisco Packet Tracer
-
-Roteamento dinâmico (RIP v2)
-
-Roteamento estático
-
-DHCP (Dynamic Host Configuration Protocol)
-
-DNS (Domain Name System)
-
-HTTP (Servidor Web)
-
-Telnet (Acesso remoto)
-
-Endereçamento IP
-
-Configuração de roteadores via CLI
-
-Segurança básica em dispositivos de rede
-
-Funcionalidades Implementadas
-
-Comunicação entre todas as filiais da empresa
-
-Comunicação entre redes internas e externas
-
-Distribuição automática de endereços IP via DHCP
-
-Resolução de nomes através de servidor DNS centralizado
-
-Acesso à página web institucional da empresa
-
-Gerenciamento remoto dos roteadores via Telnet
-
-Proteção básica dos dispositivos com senhas e banners de aviso
-
-Testes Realizados
-
-Foram realizados testes de conectividade utilizando comandos de ping entre dispositivos da mesma rede e de redes distintas, além da verificação do funcionamento correto dos serviços DHCP, DNS, HTTP e Telnet. Todos os testes apresentaram resultados satisfatórios.
-
-Considerações Finais
-
-O projeto proporcionou uma experiência prática relevante, permitindo consolidar os conhecimentos teóricos estudados ao longo da disciplina de Redes de Computadores. A simulação no Cisco Packet Tracer mostrou-se essencial para a compreensão do funcionamento de redes corporativas e da importância do planejamento, da organização e da segurança em ambientes de rede.
+1. Instale o **Cisco Packet Tracer** (disponível gratuitamente no site da Cisco Networking Academy).  
+2. Clone este repositório:  
+   ```bash
+   git clone https://github.com/SEU-USUARIO/newbyte-rede-corporativa.git
